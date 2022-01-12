@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import imgCover from '../assets/img/cover.jpg'
@@ -19,6 +19,37 @@ background-color: rgba(0, 0, 0, 0.6);
 width: 40%;
 height: 100%;
 position: relative;
+`
+
+const StyledMenuList = styled.ul`
+list-style: none;
+position: absolute;
+top: 50%;
+right: 0;
+transform: translate(0%, -50%);
+`
+
+const StyledMenuItem = styled.li`
+width: 100%;
+padding: 20px;
+display: block;
+text-align: right;
+color: ${({ theme }) => theme.subText};
+font-size: 18px;
+
+:hover {
+    color: ${({ theme }) => theme.highlight};
+    font-weight: 900;
+}
+
+a {
+    color: ${({ theme }) => theme.subText};
+    font-size: 18px;
+}
+a:hover {
+    color: ${({ theme }) => theme.highlight};
+    font-weight: 900;
+}
 `
 
 const StyledHeaderRight = styled.div`
@@ -42,12 +73,12 @@ const Header = () => {
         <header>
             <StyledHeaderContainer>
                 <StyledHeaderLeft>
-                    <ul>
-                        <li><a href="#about">關於我</a></li>
-                        <li><a href="#skills">技能</a></li>
-                        <li><a href="#experience">經歷</a></li>
-                        <li><a href="#contact">聯絡方式</a></li>
-                    </ul>
+                    <StyledMenuList>
+                        <StyledMenuItem><a href="#about">關於我</a></StyledMenuItem>
+                        <StyledMenuItem><a href="#skills">技能</a></StyledMenuItem>
+                        <StyledMenuItem><a href="#experience">經歷</a></StyledMenuItem>
+                        <StyledMenuItem><a href="#contact">聯絡方式</a></StyledMenuItem>
+                    </StyledMenuList>
                 </StyledHeaderLeft>
                 <StyledHeaderRight>
                     <StyledHeaderTitle>個人簡歷</StyledHeaderTitle>

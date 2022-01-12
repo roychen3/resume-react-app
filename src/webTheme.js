@@ -1,5 +1,5 @@
 export const theme = {
     mainText: 'black',
-    subText: '#494848',
+    subText: '#dddddd',
     highlight: 'white',
 }
