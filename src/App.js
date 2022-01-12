@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './globalStyles'
 import { theme } from './webTheme'
 import Header from './layout/Header'
-import Content from './layout/Content'
+import Content from './layout/content'
 
 function App() {
   return (
