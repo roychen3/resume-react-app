@@ -152,6 +152,7 @@ const Skills = () => (
                 <h3>前端</h3>
                 <StyledSkillList>
                     <StyledSkillItem>React</StyledSkillItem>
+                    <StyledSkillItem>JavaScript</StyledSkillItem>
                     <StyledSkillItem>CSS</StyledSkillItem>
                     <StyledSkillItem>HTML</StyledSkillItem>
                 </StyledSkillList>
