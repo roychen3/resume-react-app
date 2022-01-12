@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './globalStyles'
 import { theme } from './webTheme'
 import Header from './layout/Header'
+import Content from './layout/Content'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyles />
       <div className="App">
         <Header />
+        <Content />
       </div>
     </ThemeProvider>
   );

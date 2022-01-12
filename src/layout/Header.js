@@ -31,7 +31,7 @@ transform: translate(0%, -50%);
 
 const StyledMenuItem = styled.li`
 width: 100%;
-padding: 20px;
+padding: 1rem 1rem 1rem 0;
 display: block;
 text-align: right;
 color: ${({ theme }) => theme.subText};
