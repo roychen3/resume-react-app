@@ -1,14 +1,15 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 import About from './About'
+import Experience from './Experience'
 
 const Content = () => {
     return (
-        <div>
+        <>
             <About />
-        </div>
+            <Experience />
+        </>
     )
 }
 
