@@ -10,37 +10,23 @@ import imgExperienceCollege from '../../assets/img/experienceCollege.jpg'
 
 const StyledExperienceCoverContainer = styled.div`
 width: 100%;
-height: 200px;
-position: relative;
-overflow: hidden;
-
-@media (min-width: 992px) {
-    height: 300px;
-}
-`
-const StyledExperienceCoverImg = styled.div`
-height: 100%;
 background-image: url(${imgExperienceCover});
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-filter: blur(3px);
 `
 const StyledExperienceTitle = styled.h1`
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 2;
-padding: 1rem;
+color: ${({ theme }) => theme.subText};
+background-color: ${({ theme }) => theme.darkShadow};
+text-align: center;
+padding: 3rem;
 
 @media (min-width: 992px) {
-    padding: 2rem;
+    padding: 9rem;
 }
 `
 const ExperienceCover = () => (
     <StyledExperienceCoverContainer>
-        <StyledExperienceCoverImg />
         <StyledExperienceTitle>經歷</StyledExperienceTitle>
     </StyledExperienceCoverContainer>
 )
@@ -55,6 +41,10 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 
+:last-child{
+    margin-bottom: 0rem;
+}
+
 @media (min-width: 576px) {
     width: 80%;
 }
@@ -68,7 +58,7 @@ color: ${({ theme }) => theme.highlight};
 margin-bottom: 1rem;
 `
 const StyledExperienceNodeContent = styled.div`
-background-color: rgba(255, 255, 255, 0.8);
+background-color: ${({ theme }) => theme.whiteShadow};
 width: 100%;
 height: 80%;
 padding: 2rem 1rem;

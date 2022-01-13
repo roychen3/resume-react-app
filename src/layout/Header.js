@@ -15,7 +15,7 @@ display: flex;
 `
 
 const StyledHeaderLeft = styled.div`
-background-color: rgba(0, 0, 0, 0.6);
+background-color: ${({ theme }) => theme.darkShadow};
 width: 40%;
 height: 100%;
 position: relative;
