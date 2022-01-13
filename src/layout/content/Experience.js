@@ -41,6 +41,10 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 
+:last-child{
+    margin-bottom: 0rem;
+}
+
 @media (min-width: 576px) {
     width: 80%;
 }
