@@ -77,7 +77,7 @@ const StyledIntroductionContainer = styled.div`
 width: 100%;
 background-color: ${({ theme }) => theme.subDarkBackgroundColor};
 color: ${({ theme }) => theme.highlight};
-padding: 6rem 2rem;
+padding: 3rem 2rem;
 
 @media (min-width: 576px) {
     width: 50%;

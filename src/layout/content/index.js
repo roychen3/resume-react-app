@@ -3,12 +3,14 @@ import React from 'react'
 
 import About from './About'
 import Experience from './Experience'
+import Contact from './Contact'
 
 const Content = () => {
     return (
         <>
             <About />
             <Experience />
+            <Contact />
         </>
     )
 }

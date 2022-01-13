@@ -68,7 +68,7 @@ color: ${({ theme }) => theme.highlight};
 margin-bottom: 1rem;
 `
 const StyledExperienceNodeContent = styled.div`
-background-color: rgba(255, 255, 255, 0.8);
+background-color: ${({ theme }) => theme.whiteShadow};
 width: 100%;
 height: 80%;
 padding: 2rem 1rem;
