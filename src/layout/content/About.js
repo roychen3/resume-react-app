@@ -14,14 +14,6 @@ justify-content: flex-end;
 align-items: flex-end;
 
 @media (min-width: 576px) {
-    width: 50%;
-}
-
-@media (min-width: 992px) {
-    width: 33.33%;
-}
-
-@media (min-width: 1200px) {
     width: 40%;
 }
 `
@@ -34,27 +26,29 @@ margin-top: 3rem;
 }
 `
 const StyledPortraitPhoto = styled.div`
-width: 100%;
-height: 70vh;
 background-image: url(${imgHeadShot});
 background-repeat: no-repeat;
 background-size: cover;
-background-position: center;
+background-position: center 0px;    
+width: 100%;
+padding-top: 100%; /* Aspect Ratio 1:1 */
 
 @media (min-width: 576px) {
+    width: 100%;
     max-width: 270px;
     height: 331px;
+    padding: 0;
 }
 `
-
 const StyledPortraitSummary = styled.div`
 width: 100%;
 background-color: ${({ theme }) => theme.darkBackground};
 color: ${({ theme }) => theme.highlight};
-padding: 1rem;
+padding: 2rem;
 
 @media (min-width: 576px) {
     max-width: 270px;
+    padding: 1rem;
 }
 `
 const Portrait = () => (
@@ -81,18 +75,17 @@ color: ${({ theme }) => theme.highlight};
 padding: 3rem 2rem;
 
 @media (min-width: 576px) {
-    width: 50%;
+    width: 60%;
     padding: 12rem 4rem;
 }
 
 @media (min-width: 992px) {
-    width: 33.33%;
-    padding: 9rem 3rem;
+    width: 30%;
+    padding: 12rem 3rem;
 }
 
 @media (min-width: 1200px) {
-    width: 20%;
-    padding: 12rem 2rem;
+    padding: 12rem 3rem;
 }
 `
 const Introduction = () => (
@@ -106,20 +99,16 @@ const Introduction = () => (
 
 const StyledSkillsContainer = styled.div`
 width: 100%;
-padding: 3rem;
+padding: 3rem 2rem;
 background-color: ${({ theme }) => theme.subLightDarkBackground};
 
 @media (min-width: 576px) {
     width: 100%;
+    padding: 3rem;
 }
 
 @media (min-width: 992px) {
-    width: 33.33%;
-    padding: 5rem;
-}
-
-@media (min-width: 1200px) {
-    width: 40%;
+    width: 30%;
 }
 `
 const StyledSkillListContainerLayout = styled.div`
@@ -200,10 +189,6 @@ const Skills = () => (
 const StyledAboutContainer = styled.div`
 display: flex;
 flex-wrap: wrap;
-
-@media (min-width: 992px) {
-    min-height: 100vh;
-}
 `
 const About = () => (
     <StyledAboutContainer>
