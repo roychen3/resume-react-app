@@ -1,0 +1,46 @@
+{
+  "webCoverTitle": "個人簡歷",
+  "webMenu": {
+    "about": "關於我",
+    "skill": "技能",
+    "experience": "經歷",
+    "contact": "與我聯絡"
+  },
+  "about": {
+    "name": "陳奎辰",
+    "jobTitle": "前端工程師",
+    "education": "亞東科技大學(亞東技術學院)",
+    "introduction": {
+      "section1": "我熱愛學習實用的程式，來幫助自己用更有效率的方式整理資訊。",
+      "section2": "平常會關注科技、財經和藝術的趨勢，提醒自己這個世界一直在持續進步；",
+      "section3": "如果在開發時遇到問題，常常可以在網路上找到非常多資源幫助我解決。",
+      "section4": "所以，我感謝有幸能活在這個世代。"
+    },
+    "skill": {
+      "frontEnd": "前端",
+      "backEnd": "後端",
+      "other": "其他"
+    }
+  },
+  "experience": {
+    "useSkill": "使用技術：",
+    "bankpro": {
+      "companyName": "金財通商務科技服務股份有限公司",
+      "jobTitle": "前端工程師",
+      "period": "2020.2 - 至今",
+      "instruction": "開發「企業網路銀行」專案"
+    },
+    "arcoa": {
+      "companyName": "全虹企業",
+      "jobTitle": "工程師",
+      "period": "2018.1 - 2020.1",
+      "instruction": "開發 & 維護 兩套WMS倉儲管理系統；<br />優化使用者需求；<br />串接廠商 API；<br />寫排程發 mail；<br />定期撈取資料庫的資料轉成報表給使用者或廠商。"
+    },
+    "graduationTopic": {
+      "companyName": "畢業專題",
+      "jobTitle": "全端",
+      "period": "2017.5 - 2018.1",
+      "instruction": "利用爬蟲抓取 TripAdvisor 的飯店、餐廳 & 景點的評價，抓取下來的評語做文字情感分析，由所寫出來的語意來給出真實的評分，分析出來的資訊利用 Tableau 做視覺化，最後透過網頁呈現， 此專題是快速的讓使用者瞭解在眾多的留言或評論當中，是否有足夠的參考價值。 "
+    }
+  }
+}

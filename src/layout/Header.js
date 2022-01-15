@@ -1,6 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { FormattedMessage } from 'react-intl'
 
 import imgCover from '../assets/img/cover.jpg'
 
@@ -34,7 +35,7 @@ width: 100%;
 padding: 1rem 1rem 1rem 0;
 display: block;
 text-align: right;
-color: ${({ theme }) => theme.subText};
+color: ${({ theme }) => theme.subLighDarkText};
 font-size: 18px;
 
 :hover {
@@ -43,7 +44,7 @@ font-size: 18px;
 }
 
 a {
-    color: ${({ theme }) => theme.subText};
+    color: ${({ theme }) => theme.subLighDarkText};
     font-size: 18px;
 }
 a:hover {
@@ -75,21 +76,31 @@ const Header = () => {
                 <StyledHeaderLeft>
                     <StyledMenuList>
                         <StyledMenuItem>
-                            <a href="#about">關於我</a>
+                            <a href="#about">
+                                <FormattedMessage id="webMenu.about" />
+                            </a>
                         </StyledMenuItem>
                         <StyledMenuItem>
-                            <a href="#skill">技能</a>
+                            <a href="#skill">
+                                <FormattedMessage id="webMenu.skill" />
+                            </a>
                         </StyledMenuItem>
                         <StyledMenuItem>
-                            <a href="#experience">經歷</a>
+                            <a href="#experience">
+                                <FormattedMessage id="webMenu.experience" />
+                            </a>
                         </StyledMenuItem>
                         <StyledMenuItem>
-                            <a href="#contact">聯絡方式</a>
+                            <a href="#contact">
+                                <FormattedMessage id="webMenu.contact" />
+                            </a>
                         </StyledMenuItem>
                     </StyledMenuList>
                 </StyledHeaderLeft>
                 <StyledHeaderRight>
-                    <StyledHeaderTitle>個人簡歷</StyledHeaderTitle>
+                    <StyledHeaderTitle>
+                        <FormattedMessage id="webCoverTitle" />
+                    </StyledHeaderTitle>
                 </StyledHeaderRight>
             </StyledHeaderContainer>
         </header>
