@@ -21,6 +21,10 @@ background-color: ${({ theme }) => theme.darkShadow};
 text-align: center;
 padding: 3rem;
 
+@media (min-width: 576px) {
+    padding: 6rem;
+}
+
 @media (min-width: 992px) {
     padding: 9rem;
 }
@@ -81,6 +85,8 @@ padding-bottom: 1rem;
 const StyledExperienceNodeContentUseSkill = styled.p`
 `
 const StyledExperienceNodeContentDivider = styled.hr`
+border: 1px solid ${({ theme }) => theme.mainText};
+background-color: ${({ theme }) => theme.mainText};
 margin: 1rem 0;
 `
 const StyledExperienceNodeContentInstruction = styled.p`
@@ -99,7 +105,7 @@ const ExperienceNode = ({ data }) => (
                 {data.jobTitle}
             </StyledExperienceNodeContentJobTitle>
             <StyledExperienceNodeContentInstruction>
-                {data.instruction}
+                {data.instruction?.split('<br />').map((text) => <p>{text}</p>)}
             </StyledExperienceNodeContentInstruction>
             <StyledExperienceNodeContentDivider />
             <StyledExperienceNodeContentUseSkill>
@@ -135,13 +141,13 @@ const Experience = () => {
             jobTitle: '工程師',
             period: '2018.1 - 2020.1',
             instruction: `開發 & 維護 兩套WMS倉儲管理系統；
-            <br/>
+            <br />
             優化使用者需求；
-            <br/>
+            <br />
             串接廠商 API；
-            <br/>
+            <br />
             寫排程發 mail；
-            <br/>
+            <br />
             定期撈取資料庫的資料轉成報表給使用者或廠商。 `,
             useSkill: 'C#,  SQL, SQL Server, Oracle',
         },

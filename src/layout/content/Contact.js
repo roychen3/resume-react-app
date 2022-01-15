@@ -11,6 +11,10 @@ margin: 1rem ;
 display: block;
 color: ${({ theme }) => theme.subText};
 
+:hover {
+    cursor: ${({ $isNotLink }) => $isNotLink ? 'default' : 'pointer'};
+}
+
 @media (min-width: 992px) {
     width: 30%;
 }
@@ -20,12 +24,12 @@ const ContactWay = ({ data }) => (
         {
             data.href
                 ?
-                <StyledContactWay href={data.href}>
+                <StyledContactWay href={data.href} target="_blank">
                     {data.icon}
                     {data.infomation}
                 </StyledContactWay>
                 :
-                <StyledContactWay>
+                <StyledContactWay $isNotLink>
                     {data.icon}
                     {data.infomation}
                 </StyledContactWay>
