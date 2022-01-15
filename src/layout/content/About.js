@@ -26,23 +26,25 @@ margin-top: 3rem;
 }
 `
 const StyledPortraitPhoto = styled.div`
-width: 100%;
-height: 70vh;
 background-image: url(${imgHeadShot});
 background-repeat: no-repeat;
 background-size: cover;
-background-position: center;
+background-position: center 0px;    
+width: 100%;
+padding-top: 100%; /* Aspect Ratio 1:1 */
 
 @media (min-width: 576px) {
+    width: 100%;
     max-width: 270px;
     height: 331px;
+    padding: 0;
 }
 `
 const StyledPortraitSummary = styled.div`
 width: 100%;
 background-color: ${({ theme }) => theme.darkBackground};
 color: ${({ theme }) => theme.highlight};
-padding: 1rem 2rem;
+padding: 2rem;
 
 @media (min-width: 576px) {
     max-width: 270px;
