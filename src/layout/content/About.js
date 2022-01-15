@@ -59,11 +59,11 @@ padding: 1rem;
 const Portrait = () => (
     <StyledPortraitContainer id="about">
         <StyledPortraitTitle>
-            ABOUT
+            關於我
         </StyledPortraitTitle>
         <StyledPortraitPhoto />
         <StyledPortraitSummary>
-            陳奎辰 Roy Chen
+            陳奎辰
             <br />
             前端工程師
             <br /><br /><br />

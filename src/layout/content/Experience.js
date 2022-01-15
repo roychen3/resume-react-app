@@ -132,7 +132,7 @@ const Experience = () => {
             backgroundImg: imgExperienceBankpro,
             companyName: '金財通商務科技服務股份有限公司',
             jobTitle: '前端工程師',
-            period: '2020.2 - Today',
+            period: '2020.2 - 至今',
             instruction: '開發「企業網路銀行」專案',
             useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Git',
         },
