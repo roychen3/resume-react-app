@@ -82,7 +82,7 @@ const Contact = () => {
         }
     ]
     return (
-        <StyledContactContainer>
+        <StyledContactContainer id="contact">
             <StyledContactWayShadow>
                 <StyledContactTitle>聯絡方式</StyledContactTitle>
                 <StyledContactWayContainer>

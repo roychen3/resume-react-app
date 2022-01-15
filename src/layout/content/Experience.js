@@ -30,7 +30,7 @@ padding: 3rem;
 }
 `
 const ExperienceCover = () => (
-    <StyledExperienceCoverContainer>
+    <StyledExperienceCoverContainer id="experience">
         <StyledExperienceTitle>經歷</StyledExperienceTitle>
     </StyledExperienceCoverContainer>
 )

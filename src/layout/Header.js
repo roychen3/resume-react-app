@@ -74,10 +74,18 @@ const Header = () => {
             <StyledHeaderContainer>
                 <StyledHeaderLeft>
                     <StyledMenuList>
-                        <StyledMenuItem><a href="#about">關於我</a></StyledMenuItem>
-                        <StyledMenuItem><a href="#skills">技能</a></StyledMenuItem>
-                        <StyledMenuItem><a href="#experience">經歷</a></StyledMenuItem>
-                        <StyledMenuItem><a href="#contact">聯絡方式</a></StyledMenuItem>
+                        <StyledMenuItem>
+                            <a href="#about">關於我</a>
+                        </StyledMenuItem>
+                        <StyledMenuItem>
+                            <a href="#skill">技能</a>
+                        </StyledMenuItem>
+                        <StyledMenuItem>
+                            <a href="#experience">經歷</a>
+                        </StyledMenuItem>
+                        <StyledMenuItem>
+                            <a href="#contact">聯絡方式</a>
+                        </StyledMenuItem>
                     </StyledMenuList>
                 </StyledHeaderLeft>
                 <StyledHeaderRight>
@@ -87,8 +95,6 @@ const Header = () => {
         </header>
     )
 }
-Header.propTypes = {
-
-}
+Header.propTypes = {}
 
 export default Header

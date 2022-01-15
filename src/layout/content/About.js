@@ -57,7 +57,7 @@ padding: 1rem;
 }
 `
 const Portrait = () => (
-    <StyledPortraitContainer>
+    <StyledPortraitContainer id="about">
         <StyledPortraitTitle>
             ABOUT
         </StyledPortraitTitle>
@@ -155,7 +155,7 @@ const StyledSkillItem = styled.li`
 padding: 0.5rem 0;
 `
 const Skills = () => (
-    <StyledSkillsContainer>
+    <StyledSkillsContainer id="skill">
         <h1>技能</h1>
 
         <StyledSkillListContainerLayout>
@@ -207,8 +207,6 @@ const About = () => (
         <Skills />
     </StyledAboutContainer>
 )
-About.propTypes = {
-
-}
+About.propTypes = {}
 
 export default About
