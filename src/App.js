@@ -13,7 +13,7 @@ const StyledSwitchLanguagesContainer = styled.div`
 position: fixed;
 right: 1rem;
 bottom: 1rem;
-z-index: 2000;
+z-index: ${({ theme }) => theme.zIndex.top}; 
 `
 const StyledSwitchLanguagesButton = styled.button`
 color: ${({ theme }) => theme.highlight}; 
@@ -75,7 +75,7 @@ const SwitchLanguagesButton = ({ currentLocale, setCurrentLocale }) => {
 
       <StyledLanguagesList $isOpenList={isOpenList}>
         {Object.keys(appLanguages).map((key) => (
-          <li>
+          <li key={key}>
             <StyledLanguagesItemButton onClick={() => handleLanguagesClick(key)}>
               {key}
             </StyledLanguagesItemButton>

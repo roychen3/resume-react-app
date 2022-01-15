@@ -8,4 +8,7 @@ export const theme = {
     subLightDarkBackground: '#dddddd',
     darkShadow: '#000000cc',
     whiteShadow: '#ffffffcc',
+    zIndex: {
+        top: 2000,
+    }
 }
