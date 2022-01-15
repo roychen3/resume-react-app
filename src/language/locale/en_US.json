@@ -1,0 +1,45 @@
+{
+  "languages": "Languages: ",
+  "webCoverTitle": "RESUME",
+  "webMenu": {
+    "about": "ABOUT",
+    "skill": "SKILL",
+    "experience": "EXPERIENCE",
+    "contact": "CONTACT"
+  },
+  "about": {
+    "name": "Roy Chen",
+    "jobTitle": "Front-end developer",
+    "education": "Asia Eastern University of Science and Technology",
+    "introduction": {
+      "section1": "I love learning practical programs to help me organize information by better efficient way. Usually, I will pay attention to the trends of technology, finance and art, which can constantly increase my knowledge, and can also learn a different ways of thinking and solutions. If I encounter a problem while developing, I can often find many resources on the web to help me solve it.",
+      "section2": "So, I am grateful for live in this generation."
+    },
+    "skill": {
+      "frontEnd": "Front-End",
+      "backEnd": "Back-End",
+      "other": "Other"
+    }
+  },
+  "experience": {
+    "useSkill": "Use of skills: ",
+    "bankpro": {
+      "companyName": "BankPro",
+      "jobTitle": "Front-end Developer",
+      "period": "2020.2 - ToDay",
+      "instruction": "Develop \"Enterprise Internet Banking\" project"
+    },
+    "arcoa": {
+      "companyName": "ARCOA",
+      "jobTitle": "Software Engineer",
+      "period": "2018.1 - 2020.1",
+      "instruction": "Develop & Maintain two \"WMS warehouse management systems\".<br />Optimize user requirement.<br />Fetch customer API.<br />Develop task scheduler to get data from database, and send mail to customer or user."
+    },
+    "graduationTopic": {
+      "companyName": "GRADUATION TOPIC",
+      "jobTitle": "Full Stack Developer",
+      "period": "2017.5 - 2018.1",
+      "instruction": "Crawl restaurants, restaurants & attractions of reviews from TripAdvisor, which use to analyze text sentiment. This analysis can inferred true evaluation, and visualize the data with Tableau. Finally showed result through the web. This topic is to quickly let users know whether there is have worth a reference in among the numerous comments."
+    }
+  }
+}
