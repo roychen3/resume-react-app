@@ -1,7 +1,7 @@
 import flatten from 'flat'
 
-import en_US from './en_US.json'
-import zh_TW from './zh_TW.json'
+import en_US from './locale/en_US.json'
+import zh_TW from './locale/zh_TW.json'
 
 const appLanguages = {
   'en-US': flatten(en_US),
