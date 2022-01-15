@@ -89,7 +89,7 @@ border: 1px solid ${({ theme }) => theme.mainText};
 background-color: ${({ theme }) => theme.mainText};
 margin: 1rem 0;
 `
-const StyledExperienceNodeContentInstruction = styled.p`
+const StyledExperienceNodeContentInstruction = styled.div`
 margin-bottom: 4rem;
 `
 const ExperienceNode = ({ data }) => (
@@ -105,7 +105,8 @@ const ExperienceNode = ({ data }) => (
                 {data.jobTitle}
             </StyledExperienceNodeContentJobTitle>
             <StyledExperienceNodeContentInstruction>
-                {data.instruction?.split('<br />').map((text) => <p>{text}</p>)}
+                {data.instruction?.split('<br />')
+                    .map((text, index) => <p key={`${index}`}>{text}</p>)}
             </StyledExperienceNodeContentInstruction>
             <StyledExperienceNodeContentDivider />
             <StyledExperienceNodeContentUseSkill>
@@ -132,7 +133,7 @@ const Experience = () => {
             companyName: '金財通商務科技服務股份有限公司',
             jobTitle: '前端工程師',
             period: '2020.2 - Today',
-            instruction: '開發「陽信銀行-企業網路銀行」專案',
+            instruction: '開發「企業網路銀行」專案',
             useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Git',
         },
         {
@@ -140,15 +141,7 @@ const Experience = () => {
             companyName: '全虹企業',
             jobTitle: '工程師',
             period: '2018.1 - 2020.1',
-            instruction: `開發 & 維護 兩套WMS倉儲管理系統；
-            <br />
-            優化使用者需求；
-            <br />
-            串接廠商 API；
-            <br />
-            寫排程發 mail；
-            <br />
-            定期撈取資料庫的資料轉成報表給使用者或廠商。 `,
+            instruction: `開發 & 維護 兩套WMS倉儲管理系統；<br />優化使用者需求；<br />串接廠商 API；<br />寫排程發 mail；<br />定期撈取資料庫的資料轉成報表給使用者或廠商。 `,
             useSkill: 'C#,  SQL, SQL Server, Oracle',
         },
         {
@@ -165,7 +158,7 @@ const Experience = () => {
         <>
             <ExperienceCover />
             <StyledExperienceContainer>
-                {experienceData.map((item) => <ExperienceNode data={item} />)}
+                {experienceData.map((item, index) => <ExperienceNode key={index} data={item} />)}
             </StyledExperienceContainer>
         </>
     )

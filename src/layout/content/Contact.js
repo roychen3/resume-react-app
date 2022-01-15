@@ -86,7 +86,7 @@ const Contact = () => {
             <StyledContactWayShadow>
                 <StyledContactTitle>聯絡方式</StyledContactTitle>
                 <StyledContactWayContainer>
-                    {contactWays.map((item) => <ContactWay data={item} />)}
+                    {contactWays.map((item, index) => <ContactWay key={index} data={item} />)}
                 </StyledContactWayContainer>
             </StyledContactWayShadow>
         </StyledContactContainer>
