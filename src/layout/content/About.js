@@ -98,12 +98,8 @@ padding: 3rem 2rem;
 const Introduction = () => (
     <StyledIntroductionContainer>
         <FormattedMessage id="about.introduction.section1" />
-        <br />
-        <FormattedMessage id="about.introduction.section2" />
-        <br />
-        <FormattedMessage id="about.introduction.section3" />
         <br /><br /><br /><br />
-        <FormattedMessage id="about.introduction.section4" />
+        <FormattedMessage id="about.introduction.section2" />
     </StyledIntroductionContainer>
 )
 
