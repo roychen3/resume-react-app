@@ -129,7 +129,7 @@ const StyledSkillListContainerLayout = styled.div`
 display: flex;
 flex-wrap: wrap;
 `
-const StyledSkillListContainer = styled.ul`
+const StyledSkillListContainer = styled.div`
 padding: 2rem 0 0 0;
 width: 100%;
 
