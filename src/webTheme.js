@@ -1,11 +1,14 @@
 export const theme = {
     mainText: 'black',
-    subText: '#dddddd',
+    subDarkText: '#646464',
+    subLighDarkText: '#dddddd',
     highlight: 'white',
-    darkBackgroundColor: '#3b3b3b',
-    subDarkBackgroundColor: '#646464',
-    lighDarktBackgroundColor: '#dddddd',
+    darkBackground: '#3b3b3b',
+    subDarkBackground: '#646464',
+    subLightDarkBackground: '#dddddd',
     darkShadow: '#000000cc',
     whiteShadow: '#ffffffcc',
-
+    zIndex: {
+        top: 2000,
+    }
 }

@@ -1,22 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { FormattedMessage } from 'react-intl'
 
 import imgContact from '../../assets/img/contact.jpg'
 
 const StyledContactWay = styled.a`
 width: 100%;
 text-align: center;
-margin: 1rem ;
+margin: 1rem 0;
 display: block;
-color: ${({ theme }) => theme.subText};
+color: ${({ theme }) => theme.subLighDarkText};
 
 :hover {
     cursor: ${({ $isNotLink }) => $isNotLink ? 'default' : 'pointer'};
 }
 
 @media (min-width: 992px) {
-    width: 30%;
+    width: 33.33%;
 }
 `
 const ContactWay = ({ data }) => (
@@ -51,7 +52,7 @@ background-color: ${({ theme }) => theme.darkShadow};
 padding: 3rem 0;
 `
 const StyledContactTitle = styled.h1`
-color: ${({ theme }) => theme.subText};
+color: ${({ theme }) => theme.subLighDarkText};
 text-align: center;
 `
 const StyledContactWayContainer = styled.div`
@@ -84,7 +85,9 @@ const Contact = () => {
     return (
         <StyledContactContainer id="contact">
             <StyledContactWayShadow>
-                <StyledContactTitle>聯絡方式</StyledContactTitle>
+                <StyledContactTitle>
+                    <FormattedMessage id="webMenu.contact" />
+                </StyledContactTitle>
                 <StyledContactWayContainer>
                     {contactWays.map((item, index) => <ContactWay key={index} data={item} />)}
                 </StyledContactWayContainer>

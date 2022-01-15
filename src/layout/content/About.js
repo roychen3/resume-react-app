@@ -1,6 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { FormattedMessage } from 'react-intl'
 
 import imgHeadShot from '../../assets/img/headShot.jpg'
 
@@ -48,7 +49,7 @@ background-position: center;
 
 const StyledPortraitSummary = styled.div`
 width: 100%;
-background-color: ${({ theme }) => theme.darkBackgroundColor};
+background-color: ${({ theme }) => theme.darkBackground};
 color: ${({ theme }) => theme.highlight};
 padding: 1rem;
 
@@ -59,15 +60,15 @@ padding: 1rem;
 const Portrait = () => (
     <StyledPortraitContainer id="about">
         <StyledPortraitTitle>
-            關於我
+            <FormattedMessage id="webMenu.about" />
         </StyledPortraitTitle>
         <StyledPortraitPhoto />
         <StyledPortraitSummary>
-            陳奎辰
+            <FormattedMessage id="about.name" />
             <br />
-            前端工程師
+            <FormattedMessage id="about.jobTitle" />
             <br /><br /><br />
-            亞東技術學院
+            <FormattedMessage id="about.education" />
         </StyledPortraitSummary>
     </StyledPortraitContainer>
 )
@@ -75,7 +76,7 @@ const Portrait = () => (
 
 const StyledIntroductionContainer = styled.div`
 width: 100%;
-background-color: ${({ theme }) => theme.subDarkBackgroundColor};
+background-color: ${({ theme }) => theme.subDarkBackground};
 color: ${({ theme }) => theme.highlight};
 padding: 3rem 2rem;
 
@@ -96,13 +97,13 @@ padding: 3rem 2rem;
 `
 const Introduction = () => (
     <StyledIntroductionContainer>
-        我熱愛學習實用的程式，來幫助自己用更有效率的方式整理資訊。
+        <FormattedMessage id="about.introduction.section1" />
         <br />
-        平常會關注科技、財經和藝術的趨勢，提醒自己這個世界一直在持續進步；
+        <FormattedMessage id="about.introduction.section2" />
         <br />
-        如果在開發時遇到問題，常常可以在網路上找到非常多資源幫助我解決。
+        <FormattedMessage id="about.introduction.section3" />
         <br /><br /><br /><br />
-        所以， 我感謝有幸能活在這個世代。
+        <FormattedMessage id="about.introduction.section4" />
     </StyledIntroductionContainer>
 )
 
@@ -110,7 +111,7 @@ const Introduction = () => (
 const StyledSkillsContainer = styled.div`
 width: 100%;
 padding: 3rem;
-background-color: ${({ theme }) => theme.lighDarktBackgroundColor};
+background-color: ${({ theme }) => theme.subLightDarkBackground};
 
 @media (min-width: 576px) {
     width: 100%;
@@ -156,11 +157,15 @@ padding: 0.5rem 0;
 `
 const Skills = () => (
     <StyledSkillsContainer id="skill">
-        <h1>技能</h1>
+        <h1>
+            <FormattedMessage id="webMenu.skill" />
+        </h1>
 
         <StyledSkillListContainerLayout>
             <StyledSkillListContainer>
-                <h3>前端</h3>
+                <h3>
+                    <FormattedMessage id="about.skill.frontEnd" />
+                </h3>
                 <StyledSkillListDivider />
                 <StyledSkillList>
                     <StyledSkillItem>React</StyledSkillItem>
@@ -171,7 +176,9 @@ const Skills = () => (
             </StyledSkillListContainer>
 
             <StyledSkillListContainer>
-                <h3>後端</h3>
+                <h3>
+                    <FormattedMessage id="about.skill.backEnd" />
+                </h3>
                 <StyledSkillListDivider />
                 <StyledSkillList>
                     <StyledSkillItem>C#</StyledSkillItem>
@@ -182,7 +189,9 @@ const Skills = () => (
             </StyledSkillListContainer>
 
             <StyledSkillListContainer>
-                <h3>其他</h3>
+                <h3>
+                    <FormattedMessage id="about.skill.other" />
+                </h3>
                 <StyledSkillListDivider />
                 <StyledSkillList>
                     <StyledSkillItem>Git</StyledSkillItem>
