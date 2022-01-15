@@ -129,7 +129,7 @@ const StyledExperienceContainer = styled.div`
 padding: 3rem 0;
 background-image: url(${imgExperienceBackground});
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 100% 100%;
 background-position: center;
 `
 const Experience = () => {

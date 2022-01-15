@@ -8,7 +8,7 @@ import imgContact from '../../assets/img/contact.jpg'
 const StyledContactWay = styled.a`
 width: 100%;
 text-align: center;
-margin: 1rem ;
+margin: 1rem 0;
 display: block;
 color: ${({ theme }) => theme.subLighDarkText};
 
@@ -17,7 +17,7 @@ color: ${({ theme }) => theme.subLighDarkText};
 }
 
 @media (min-width: 992px) {
-    width: 30%;
+    width: 33.33%;
 }
 `
 const ContactWay = ({ data }) => (

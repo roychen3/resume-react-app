@@ -60,10 +60,12 @@ position: relative;
 `
 
 const StyledHeaderTitle = styled.p`
-position: absolute;
-color: ${({ theme }) => theme.highlight};
+width: 100%;
+color: ${({ theme }) => theme.mainText};
+background-color: ${({ theme }) => theme.whiteShadow};
 font-size: 36px;
 font-weight: bold;
+position: absolute;
 top: 50%;
 transform: translateY(-50%);
 padding: 1rem;
