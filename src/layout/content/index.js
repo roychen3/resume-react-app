@@ -14,9 +14,6 @@ const Content = () => {
         </>
     )
 }
-
-Content.propTypes = {
-
-}
+Content.propTypes = {}
 
 export default Content

@@ -57,13 +57,13 @@ padding: 1rem;
 }
 `
 const Portrait = () => (
-    <StyledPortraitContainer>
+    <StyledPortraitContainer id="about">
         <StyledPortraitTitle>
-            ABOUT
+            關於我
         </StyledPortraitTitle>
         <StyledPortraitPhoto />
         <StyledPortraitSummary>
-            陳奎辰 Roy Chen
+            陳奎辰
             <br />
             前端工程師
             <br /><br /><br />
@@ -130,26 +130,38 @@ display: flex;
 flex-wrap: wrap;
 `
 const StyledSkillListContainer = styled.ul`
-padding: 2rem 0;
-width: 50%;
+padding: 2rem 0 0 0;
+width: 100%;
+
+@media (min-width: 576px) {
+    padding: 2rem 2rem 0 0;
+    width: 33.33%;
+}
 
 @media (min-width: 992px) {
+    padding: 2rem 0 0 0;
     width: 100%;
 }
 `
+const StyledSkillListDivider = styled.hr`
+border: 1px solid ${({ theme }) => theme.mainText};
+background-color: ${({ theme }) => theme.mainText};
+margin: 1rem 0;
+`
 const StyledSkillList = styled.ul`
-padding-left: 2rem;
+padding-left: 1rem;
 `
 const StyledSkillItem = styled.li`
 padding: 0.5rem 0;
 `
 const Skills = () => (
-    <StyledSkillsContainer>
+    <StyledSkillsContainer id="skill">
         <h1>技能</h1>
 
         <StyledSkillListContainerLayout>
             <StyledSkillListContainer>
                 <h3>前端</h3>
+                <StyledSkillListDivider />
                 <StyledSkillList>
                     <StyledSkillItem>React</StyledSkillItem>
                     <StyledSkillItem>JavaScript</StyledSkillItem>
@@ -160,11 +172,20 @@ const Skills = () => (
 
             <StyledSkillListContainer>
                 <h3>後端</h3>
+                <StyledSkillListDivider />
                 <StyledSkillList>
                     <StyledSkillItem>C#</StyledSkillItem>
                     <StyledSkillItem>SQL</StyledSkillItem>
                     <StyledSkillItem>Python</StyledSkillItem>
                     <StyledSkillItem>PHP</StyledSkillItem>
+                </StyledSkillList>
+            </StyledSkillListContainer>
+
+            <StyledSkillListContainer>
+                <h3>其他</h3>
+                <StyledSkillListDivider />
+                <StyledSkillList>
+                    <StyledSkillItem>Git</StyledSkillItem>
                 </StyledSkillList>
             </StyledSkillListContainer>
         </StyledSkillListContainerLayout>
@@ -176,7 +197,7 @@ display: flex;
 flex-wrap: wrap;
 
 @media (min-width: 992px) {
-    height: 100vh;
+    min-height: 100vh;
 }
 `
 const About = () => (
@@ -186,8 +207,6 @@ const About = () => (
         <Skills />
     </StyledAboutContainer>
 )
-About.propTypes = {
-
-}
+About.propTypes = {}
 
 export default About
