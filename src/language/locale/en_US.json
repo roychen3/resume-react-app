@@ -24,9 +24,9 @@
   "experience": {
     "useSkill": "Use of skills: ",
     "bankpro": {
-      "companyName": "BankPro",
+      "companyName": "BANKPRO",
       "jobTitle": "Front-end Developer",
-      "period": "2020.2 - ToDay",
+      "period": "2020.2 - PRESENT",
       "instruction": "Develop \"Enterprise Internet Banking\" project. Must have RWD, support Chrome/Safari/Firefox/Edge browsers, multilingual, need to communicate with the card reader with the API provided by the outsourcer and provides print friendly for users to download PDF. After understanding the requirements, feedback a better UI/UX experience to SA or customers."
     },
     "arcoa": {
