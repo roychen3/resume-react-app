@@ -5,6 +5,7 @@ import { FormattedMessage, useIntl } from 'react-intl'
 
 import imgExperienceCover from '../../assets/img/experienceCover.jpg'
 import imgExperienceBackground from '../../assets/img/experienceBackground.jpg'
+import experienceBibian from '../../assets/img/experienceBibian.jpg'
 import imgExperienceBankpro from '../../assets/img/experienceBankpro.jpg'
 import imgExperienceArcoa from '../../assets/img/experienceArcoa.jpg'
 import imgExperienceCollege from '../../assets/img/experienceCollege.jpg'
@@ -136,6 +137,14 @@ const Experience = () => {
     const intl = useIntl()
 
     const experienceData = [
+        {
+            backgroundImg: experienceBibian,
+            companyName: intl.formatMessage({ id: 'experience.bibian.companyName' }),
+            jobTitle: intl.formatMessage({ id: 'experience.bibian.jobTitle' }),
+            period: intl.formatMessage({ id: 'experience.bibian.period' }),
+            instruction: intl.formatMessage({ id: 'experience.bibian.instruction' }),
+            useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Next.js, Git',
+        },
         {
             backgroundImg: imgExperienceBankpro,
             companyName: intl.formatMessage({ id: 'experience.bankpro.companyName' }),

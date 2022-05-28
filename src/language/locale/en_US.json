@@ -23,11 +23,17 @@
   },
   "experience": {
     "useSkill": "Use of skills: ",
+    "bibian": {
+      "companyName": "BIBIAN | PChome",
+      "jobTitle": "Front-end Developer",
+      "period": "2022.4 - PRESENT",
+      "instruction": "Develop official website; develop official website content management system; develop similar \"World Shopping\" services."
+    },
     "bankpro": {
       "companyName": "BANKPRO",
       "jobTitle": "Front-end Developer",
-      "period": "2020.2 - PRESENT",
-      "instruction": "Develop \"Enterprise Internet Banking\" project. Must have RWD, support Chrome/Safari/Firefox/Edge browsers, multilingual, need to communicate with the card reader with the API provided by the outsourcer and provides print friendly for users to download PDF. After understanding the requirements, feedback a better UI/UX experience to SA or customers."
+      "period": "2020.2 - 2022.3",
+      "instruction": "Develop \"Enterprise Internet Banking\" project. Mainly responsible for the transaction functions of Taiwan currency and foreign currencies; some query and management settings; give technical suggestions and feedback for UI/UX."
     },
     "arcoa": {
       "companyName": "ARCOA",
