@@ -23,11 +23,17 @@
   },
   "experience": {
     "useSkill": "使用技術：",
+    "bibian": {
+      "companyName": "網家跨境服務股份有限公司",
+      "jobTitle": "前端工程師",
+      "period": "2022.4 - 至今",
+      "instruction": "開發官網；開發官網後台管理系統；開發類 World Shopping 服務。"
+    },
     "bankpro": {
       "companyName": "金財通商務科技服務股份有限公司",
       "jobTitle": "前端工程師",
-      "period": "2020.2 - 至今",
-      "instruction": "開發「陽信銀行-企業網路銀行」專案，必須具備 RWD、支援 Chrome/Safari/Firefox/Edge 瀏覽器、多國語系、需與外包商提供的 API 來進行讀卡機溝通、提供友善列印讓使用者下載成 PDF。理解需求後，反饋更好的 UI/UX 體驗給 SA 或客戶。"
+      "period": "2020.2 - 2022.3",
+      "instruction": "開發企業網路銀行專案，主要負責台幣與外幣的交易功能，以及些許的查詢與管理設定功能；針對 UI/UX 給與技術上的建議與反饋。"
     },
     "arcoa": {
       "companyName": "全虹企業",
