@@ -3,7 +3,7 @@ https://roychen3.github.io/resume-react-app/
 
 <br />
 
-### `node v17.3.0`
+### node v17.3.0
 
 ### Remove gh-page branch before deploy
 
