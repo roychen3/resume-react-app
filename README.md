@@ -1,3 +1,16 @@
+### DEMO
+https://roychen3.github.io/resume-react-app/
+
+<br />
+
+### `node v17.3.0`
+
+### Remove gh-page branch before deploy
+
+<br />
+<br />
+<br />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,7 +81,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### `node v17.3.0`
-
-### Remove gh-page branch before deploy
