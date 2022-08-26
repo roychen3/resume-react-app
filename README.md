@@ -5,8 +5,6 @@ https://roychen3.github.io/resume-react-app/
 
 ### node v17.3.0
 
-### Remove gh-page branch before deploy
-
 <br />
 <br />
 <br />
@@ -81,3 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Remove gh-page branch before deploy
