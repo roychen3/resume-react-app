@@ -39,7 +39,7 @@ const Experience = () => {
       jobTitle: intl.formatMessage({ id: 'experience.bibian.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bibian.period' }),
       instruction: intl.formatMessage({ id: 'experience.bibian.instruction' }),
-      useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Next.js, Git',
+      useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Next.js, webpack, Git',
     },
     {
       backgroundImg: imgExperienceBankpro,

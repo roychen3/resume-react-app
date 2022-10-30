@@ -27,19 +27,19 @@
       "companyName": "BIBIAN | PChome",
       "jobTitle": "Front-end Developer",
       "period": "2022.4 - PRESENT",
-      "instruction": "Develop official website; develop official website content management system; develop similar \"World Shopping\" services."
+      "instruction": "● Use next.js & Redux to build front-end system<br />● Write unit tests with Jest & component tests with React Testing Library<br />● Use Husk with Eslint, Prettier & Jest to practice git commit automated testing and correction<br />● Use swiper to achieve carousel effect<br />● According to the Figma provided by the design, use styled-components to make the page<br />● Planning api with back-end developer<br /><br />Project:<br />● Develop \"Drug Bibian\" - https://drug.bibian.co.jp/<br />   ○ Project Construction<br />   ○ Mainly responsible for the home page and product page<br />   ○ Write the product data structure that \"BBC bar\" can parse, which can reduce the cost of parsing and development, and can be tested. <br /><br />● Maintain \"Cross-border Purchase Service\" - https://shinohara-ss.shop-pro.jp/?pid=138207062<br />   ○ Parse the HTML document of the partner e-commerce, and convert the product page into a data that can be used by the \"BBC bar\"<br />   ○ Refactoring projects using Web Components<br />      ■ Reduce development costs by 90%, and more as demand increases<br />      ■ Reduce initial page load speed<br /><br />● Maintain \"Product Inclusion Tool - Chrome Extension\"<br />   ○ Optimize webpack to increase building speed<br />   ○ Repurchase and optimization projects<br />      ■ Split component, page<br />      ■ Integration api, \"chrome.runtime.sendMessage\"<br />      ■ Form validation into \"custom hook\"<br />      ■ Fix bugs<br /><br />● Refactored \"Buy on Demand\" channel (refactored version is not online) - https://www.bibian.co.jp/bbcstore/<br />   ○ Divide component blocks, so that the background can be set for different blocks, providing customized web page layout<br />   ○ Can reduce development costs by 90%, and can continue to create new blocks with designers<br />   ○ Use \"React Hook Form\" for form validation and provide background form filling function<br />   ○ For the purpose of reduce the first load of the page, practice infinite scrolling of the page<br />   ○ The background setting interface provides the component dragging function to adjust the order of products<br />   ○ UI/UX optimization<br />"
     },
     "bankpro": {
       "companyName": "BANKPRO",
       "jobTitle": "Front-end Developer",
       "period": "2020.2 - 2022.3",
-      "instruction": "Develop \"Enterprise Internet Banking\" project. Mainly responsible for the transaction functions of Taiwan currency and foreign currencies; some query and management settings; give technical suggestions and feedback for UI/UX."
+      "instruction": "● Development of sunnybank Enterprise Internet Bank - https://b2bank.sunnybank.com.tw/eb/<br />    ○ Mainly responsible for functions: account transaction inquiry, user management settings and transfer transaction functions in Taiwan and foreign currencies<br />    ○ Use \"formik\" for form validation, providing form filling functions<br />    ○ Connect the card reader to handle authentication and set the chip card password<br />    ○ \".csv\" and \".txt\" file download, web friendly printing<br />    ○ Use \"react-intl\" to implement multiple languages<br />    ○ Analysis and planning of redux and saga code splitting can reduce the first code load, which is estimated to be reduced by more than 50%<br />    ○ The code provided by the outsourcers is integrated into the React project, and UI/UX optimization if necessary<br />"
     },
     "arcoa": {
       "companyName": "ARCOA",
       "jobTitle": "Software Engineer",
       "period": "2018.1 - 2020.1",
-      "instruction": "Develop & Maintain two \"WMS warehouse management systems\".<br />Optimize user requirement.<br />Fetch customer API.<br />Develop task scheduler to get data from database, and send mail to customer or user."
+      "instruction": "● Develop & Maintain two \"WMS warehouse management systems\".<br />● Fetch customer API.<br />● Develop task scheduler to get data from database, and send mail to customer or user."
     }
   }
 }
