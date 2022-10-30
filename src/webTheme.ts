@@ -1,4 +1,4 @@
-interface themeTypes {
+export interface themeTypes {
   mainText: string;
   subDarkText: string;
   subLighDarkText: string;
