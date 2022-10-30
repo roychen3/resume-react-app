@@ -40,7 +40,7 @@ const StyledMenuItem = styled.li`
   display: block;
   text-align: right;
   color: ${({ theme }) => theme.subLighDarkText};
-  font-size: 18px;
+  font-size: 1.125rem;
 
   :hover {
     color: ${({ theme }) => theme.highlight};
@@ -49,7 +49,7 @@ const StyledMenuItem = styled.li`
 
   a {
     color: ${({ theme }) => theme.subLighDarkText};
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   a:hover {
     color: ${({ theme }) => theme.highlight};
@@ -67,7 +67,7 @@ const StyledHeaderTitle = styled.p`
   width: 100%;
   color: ${({ theme }) => theme.mainText};
   background-color: ${({ theme }) => theme.whiteShadow};
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   position: absolute;
   top: 50%;

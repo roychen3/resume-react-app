@@ -48,7 +48,7 @@ const StyledExperienceNodeContentInstruction = styled.p`
   font-size: 0.875rem;
   margin-bottom: 2rem;
   white-space: pre-wrap;
-  max-height: 200px;
+  max-height: 12.5rem;
   overflow-y: auto;
 `;
 const StyledExperienceNodeSkills = styled.p`

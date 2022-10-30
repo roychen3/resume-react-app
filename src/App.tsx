@@ -21,7 +21,7 @@ const StyledSwitchLanguagesButton = styled.button`
   border: 0px;
   background-color: ${({ theme }) => theme.darkShadow};
   padding: 0.5rem;
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 100%;
   text-align: left;
 
@@ -39,7 +39,7 @@ const StyledLanguagesList = styled.ul<StyledLanguagesListProps>`
   border-radius: 6px;
   background-color: ${({ theme }) => theme.darkShadow};
   padding: 0.5rem 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   display: ${({ $isOpenList }) => ($isOpenList ? 'initial' : 'none')};
   position: absolute;
   bottom: 100%;

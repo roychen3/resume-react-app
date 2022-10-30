@@ -21,7 +21,7 @@ const StyledExperienceContainer = styled.div`
 const StyledExperienceNodeContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  max-width: 992px;
+  max-width: 62rem;
   display: grid;
   gap: 3rem;
 

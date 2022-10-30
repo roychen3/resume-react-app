@@ -68,7 +68,7 @@ const StyledContactWayContainer = styled.div`
 `;
 const StyledContactWayIcon = styled.i`
   display: block;
-  font-size: 45px;
+  font-size: 2.875rem;
 `;
 const Contact = () => {
   const contactWays = [
