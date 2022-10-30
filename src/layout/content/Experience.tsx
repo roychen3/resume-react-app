@@ -41,9 +41,6 @@ const ExperienceCover = () => (
 interface StyledExperienceNodeProps {
   $backgroundImg: string;
 }
-// @media (min-width: 992px) {
-//   transform: translateX(-80px);
-// }
 const StyledExperienceNode = styled.div<StyledExperienceNodeProps>`
   padding: 1rem 1rem 3rem;
   background-image: url(${({ $backgroundImg }) => $backgroundImg});
@@ -56,7 +53,7 @@ const StyledExperienceNode = styled.div<StyledExperienceNodeProps>`
   }
 
   @media (min-width: 992px) {
-    width: 80%;
+    transform: translateX(-5rem);
   }
 `;
 
@@ -64,12 +61,14 @@ const StyledExperienceNodePeriod = styled.h1`
   color: ${({ theme }) => theme.highlight};
   margin-bottom: 1rem;
 `;
-// @media (min-width: 992px) {
-//   transform: translateX(233px);
-// }
+
 const StyledExperienceNodeContent = styled.div`
   background-color: ${({ theme }) => theme.whiteShadow};
   padding: 2rem 1rem;
+
+  @media (min-width: 992px) {
+    transform: translateX(13rem);
+  }
 `;
 const StyledExperienceNodeContentCompanyName = styled.h2``;
 const StyledExperienceNodeContentJobTitle = styled.h4`
@@ -140,7 +139,7 @@ const StyledExperienceContainer = styled.div`
 const StyledExperienceNodeContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 992px;
   display: grid;
   gap: 3rem;
 
@@ -175,20 +174,6 @@ const Experience = () => {
       period: intl.formatMessage({ id: 'experience.arcoa.period' }),
       instruction: intl.formatMessage({ id: 'experience.arcoa.instruction' }),
       useSkill: 'C#,  SQL, SQL Server, Oracle',
-    },
-    {
-      backgroundImg: imgExperienceCollege,
-      companyName: intl.formatMessage({
-        id: 'experience.graduationTopic.companyName',
-      }),
-      jobTitle: intl.formatMessage({
-        id: 'experience.graduationTopic.jobTitle',
-      }),
-      period: intl.formatMessage({ id: 'experience.graduationTopic.period' }),
-      instruction: intl.formatMessage({
-        id: 'experience.graduationTopic.instruction',
-      }),
-      useSkill: 'Python, HTML, CSS, JavaScript, PHP ,Tableau API',
     },
   ];
 
