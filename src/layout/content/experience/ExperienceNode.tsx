@@ -48,7 +48,7 @@ const StyledExperienceNodeContentInstruction = styled.p`
   font-size: 0.875rem;
   margin-bottom: 2rem;
   white-space: pre-wrap;
-  max-height: 12.5rem;
+  max-height: 45vh;
   overflow-y: auto;
 `;
 const StyledExperienceNodeSkills = styled.p`
@@ -59,6 +59,7 @@ interface ExperienceNodeProps {
   data: {
     backgroundImg: string;
     companyName: string;
+    companyUrl: string;
     jobTitle: string;
     period: string;
     instruction: string;
@@ -73,7 +74,7 @@ const ExperienceNode: React.FC<ExperienceNodeProps> = ({ data }) => {
       <StyledExperienceNodePeriod>{data.period}</StyledExperienceNodePeriod>
       <StyledExperienceNodeContent>
         <StyledExperienceNodeContentCompanyName>
-          {data.companyName}
+          <a href={data.companyUrl} target="_blank">{data.companyName}</a>
         </StyledExperienceNodeContentCompanyName>
         <StyledExperienceNodeContentJobTitle>
           {data.jobTitle}

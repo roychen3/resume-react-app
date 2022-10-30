@@ -36,6 +36,7 @@ const Experience = () => {
     {
       backgroundImg: experienceBibian,
       companyName: intl.formatMessage({ id: 'experience.bibian.companyName' }),
+      companyUrl: 'https://www.bibian.co.jp/',
       jobTitle: intl.formatMessage({ id: 'experience.bibian.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bibian.period' }),
       instruction: intl.formatMessage({ id: 'experience.bibian.instruction' }),
@@ -44,6 +45,7 @@ const Experience = () => {
     {
       backgroundImg: imgExperienceBankpro,
       companyName: intl.formatMessage({ id: 'experience.bankpro.companyName' }),
+      companyUrl: 'https://www.bankpro.com.tw/',
       jobTitle: intl.formatMessage({ id: 'experience.bankpro.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bankpro.period' }),
       instruction: intl.formatMessage({ id: 'experience.bankpro.instruction' }),
@@ -52,6 +54,7 @@ const Experience = () => {
     {
       backgroundImg: imgExperienceArcoa,
       companyName: intl.formatMessage({ id: 'experience.arcoa.companyName' }),
+      companyUrl: 'http://www.arcoa.com.tw/',
       jobTitle: intl.formatMessage({ id: 'experience.arcoa.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.arcoa.period' }),
       instruction: intl.formatMessage({ id: 'experience.arcoa.instruction' }),
