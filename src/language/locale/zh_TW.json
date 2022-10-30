@@ -27,25 +27,19 @@
       "companyName": "網家跨境服務股份有限公司",
       "jobTitle": "前端工程師",
       "period": "2022.4 - 至今",
-      "instruction": "開發官網；開發官網後台管理系統；開發類 World Shopping 服務。"
+      "instruction": "● 使用 next.js & Redux 架構前端系統<br />● 使用 Jest 撰寫單元測試以及使用 React Testing Library 撰寫元件測試<br />● 使用 Husk 搭配 Eslint、Prettier & Jest 達到 git commit 自動化測試與修正<br />● 使用 swiper 達到輪播效果<br />● 依照設計提供的 Figma，使用 styled-components 做頁面<br />● 與後端規劃 api 規格<br /><br />專案:<br />● 開發「中文藥妝商城」 - https://drug.bibian.co.jp/<br />   ○ 專案建置<br />   ○ 主要負責首頁與商品頁<br />   ○ 選寫 BBC bar 可以解析的商品資料結構，可以減少解析開發成本，並且可測試。<br /><br />● 維護「跨境購買服務」 - https://shinohara-ss.shop-pro.jp/?pid=138207062<br />   ○ 解析合作電商的 HTML，將商品頁轉換成 BBC bar 可以使用的資料結構<br />   ○ 使用 Web Components 重構專案<br />      ■ 降低 90% 開發成本，且隨著需求增加降低越多<br />      ■ 降低頁面初次載入速度<br /><br />● 維護「商品收錄工具 - Chrome Extension」<br />   ○ 優化 webpack 增加打包速度<br />   ○ 重購與優化專案<br />      ■ 拆分 component、page<br />      ■ 統整 api、chrome.runtime.sendMessage<br />      ■ 將表單驗證 custom hook 化<br />      ■ 修復 bug<br /><br />● 重構「隨選即買」頻道 (重構版未上線) - https://www.bibian.co.jp/bbcstore/<br />   ○ 分析網頁，並劃分元件區塊，讓後台可以針對頁面不同區塊進行設定，讓合作商店可以客製化自家網頁版面；可以降低 90% 開發成本，且可以與設計師不斷創造新的區塊供廠商選用<br />   ○ 使用 React Hook Form 進行表單驗證，提供後台設定表單填寫功能<br />   ○ 為了降低頁面第一次載入量及 api 資料過大等問題，實踐無限滾動頁面<br />   ○ 後台設定介面提供元件拖移功能，達到調整商品排序<br />   ○ UI/UX優化<br />"
     },
     "bankpro": {
       "companyName": "金財通商務科技服務股份有限公司",
       "jobTitle": "前端工程師",
       "period": "2020.2 - 2022.3",
-      "instruction": "開發企業網路銀行專案，主要負責台幣與外幣的交易功能，以及些許的查詢與管理設定功能；針對 UI/UX 給與技術上的建議與反饋。"
+      "instruction": "● 開發陽信企業網路銀行 - https://b2bank.sunnybank.com.tw/eb/<br />   ○ 主要負責功能: 帳戶交易查詢、使用者管理設定和台外幣的轉帳交易功能<br />   ○ 使用 formik 進行表單驗證，提供轉帳交易與管理設定等表單填寫功能<br />   ○ 串接讀卡機進行身份驗證功能、設定晶片卡密碼<br />   ○ .csv 與 .txt 檔案下載、網頁友善列印<br />   ○ 使用 react-intl 實現多國語系<br />   ○ 分析與規劃 redux 與 saga code splitting，可以降低第一次 code 載入量，預估可降低 50%以上<br />   ○ 切版提供的 code 整合至 React 專案裡，必要時進行 UI/UX 優化<br />"
     },
     "arcoa": {
       "companyName": "全虹企業",
       "jobTitle": "工程師",
       "period": "2018.1 - 2020.1",
-      "instruction": "開發 & 維護 兩套WMS倉儲管理系統；<br />優化使用者需求；<br />串接廠商 API；<br />開發排程從資料庫來撈取資料並寄發 mail 給廠商或使用者。"
-    },
-    "graduationTopic": {
-      "companyName": "畢業專題",
-      "jobTitle": "全端",
-      "period": "2017.5 - 2018.1",
-      "instruction": "利用爬蟲抓取 TripAdvisor 的飯店、餐廳 & 景點的評價，抓取下來的評價做文字情感分析，由此得出真實的評價，再將資料利用 Tableau 做視覺化，最後透過網頁呈現。此專題是快速的讓使用者瞭解在眾多的留言或評論當中，是否有足夠的參考價值。 "
+      "instruction": "● 開發與維護兩套WMS倉儲管理系統<br />● 串接現有客戶或合作廠商 API<br />● 開發排程從資料庫來撈取資料並寄發 mail 給廠商或使用者"
     }
   }
 }

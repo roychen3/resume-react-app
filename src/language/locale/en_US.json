@@ -40,12 +40,6 @@
       "jobTitle": "Software Engineer",
       "period": "2018.1 - 2020.1",
       "instruction": "Develop & Maintain two \"WMS warehouse management systems\".<br />Optimize user requirement.<br />Fetch customer API.<br />Develop task scheduler to get data from database, and send mail to customer or user."
-    },
-    "graduationTopic": {
-      "companyName": "GRADUATION TOPIC",
-      "jobTitle": "Full Stack Developer",
-      "period": "2017.5 - 2018.1",
-      "instruction": "Crawl restaurants, restaurants & attractions of reviews from TripAdvisor, which use to analyze text sentiment. This analysis can inferred true evaluation, and visualize the data with Tableau. Finally showed result through the web. This topic is to quickly let users know whether there is have worth a reference in among the numerous comments."
     }
   }
 }

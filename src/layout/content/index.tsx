@@ -2,7 +2,7 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 
 import About from './About'
-import Experience from './Experience'
+import Experience from './experience'
 import Contact from './Contact'
 
 const Content = () => {

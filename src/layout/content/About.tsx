@@ -157,6 +157,7 @@ const Skills = () => (
                     <StyledSkillItem>JavaScript</StyledSkillItem>
                     <StyledSkillItem>CSS</StyledSkillItem>
                     <StyledSkillItem>HTML</StyledSkillItem>
+                    <StyledSkillItem>webpack</StyledSkillItem>
                 </StyledSkillList>
             </StyledSkillListContainer>
 
@@ -168,8 +169,6 @@ const Skills = () => (
                 <StyledSkillList>
                     <StyledSkillItem>C#</StyledSkillItem>
                     <StyledSkillItem>SQL</StyledSkillItem>
-                    <StyledSkillItem>Python</StyledSkillItem>
-                    <StyledSkillItem>PHP</StyledSkillItem>
                 </StyledSkillList>
             </StyledSkillListContainer>
 
