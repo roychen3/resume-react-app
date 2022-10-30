@@ -41,26 +41,22 @@ const ExperienceCover = () => (
 interface StyledExperienceNodeProps {
   $backgroundImg: string;
 }
+// @media (min-width: 992px) {
+//   transform: translateX(-80px);
+// }
 const StyledExperienceNode = styled.div<StyledExperienceNodeProps>`
-  width: 100%;
-  max-width: 600px;
-  margin: 0rem auto 3rem;
   padding: 1rem 1rem 3rem;
   background-image: url(${({ $backgroundImg }) => $backgroundImg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  :last-child {
-    margin-bottom: 0rem;
-  }
-
-  @media (min-width: 576px) {
-    width: 80%;
+  @media (min-width: 768px) {
+    padding: 1rem 3rem 3rem;
   }
 
   @media (min-width: 992px) {
-    transform: translateX(-80px);
+    width: 80%;
   }
 `;
 
@@ -68,21 +64,12 @@ const StyledExperienceNodePeriod = styled.h1`
   color: ${({ theme }) => theme.highlight};
   margin-bottom: 1rem;
 `;
+// @media (min-width: 992px) {
+//   transform: translateX(233px);
+// }
 const StyledExperienceNodeContent = styled.div`
   background-color: ${({ theme }) => theme.whiteShadow};
-  width: 100%;
-  height: 80%;
   padding: 2rem 1rem;
-
-  @media (min-width: 576px) {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 992px) {
-    width: 80%;
-    transform: translateX(233px);
-  }
 `;
 const StyledExperienceNodeContentCompanyName = styled.h2``;
 const StyledExperienceNodeContentJobTitle = styled.h4`
@@ -94,8 +81,15 @@ const StyledExperienceNodeContentDivider = styled.hr`
   background-color: ${({ theme }) => theme.mainText};
   margin: 1rem 0;
 `;
-const StyledExperienceNodeContentInstruction = styled.div`
-  margin-bottom: 4rem;
+const StyledExperienceNodeContentInstruction = styled.p`
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow-y: auto;
+`;
+const StyledExperienceNodeSkills = styled.p`
+  font-size: 0.875rem;
 `;
 
 interface ExperienceNodeProps {
@@ -122,16 +116,14 @@ const ExperienceNode: React.FC<ExperienceNodeProps> = ({ data }) => {
           {data.jobTitle}
         </StyledExperienceNodeContentJobTitle>
         <StyledExperienceNodeContentInstruction>
-          {data.instruction?.split('<br />').map((text, index) => (
-            <p key={`${index}`}>{text}</p>
-          ))}
+          {data.instruction?.split('<br />').join('\n')}
         </StyledExperienceNodeContentInstruction>
         <StyledExperienceNodeContentDivider />
-        <p>
+        <StyledExperienceNodeSkills>
           {`${intl.formatMessage({ id: 'experience.useSkill' })}${
             data.useSkill
           }`}
-        </p>
+        </StyledExperienceNodeSkills>
       </StyledExperienceNodeContent>
     </StyledExperienceNode>
   );
@@ -143,6 +135,18 @@ const StyledExperienceContainer = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+`;
+
+const StyledExperienceNodeContainer = styled.div`
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  gap: 3rem;
+
+  @media (min-width: 992px) {
+    width: 80%;
+  }
 `;
 const Experience = () => {
   const intl = useIntl();
@@ -192,9 +196,11 @@ const Experience = () => {
     <>
       <ExperienceCover />
       <StyledExperienceContainer>
-        {experienceData.map((item, index) => (
-          <ExperienceNode key={index} data={item} />
-        ))}
+        <StyledExperienceNodeContainer>
+          {experienceData.map((item, index) => (
+            <ExperienceNode key={index} data={item} />
+          ))}
+        </StyledExperienceNodeContainer>
       </StyledExperienceContainer>
     </>
   );

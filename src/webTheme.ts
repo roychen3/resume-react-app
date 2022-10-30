@@ -21,7 +21,7 @@ export const theme: themeTypes = {
   subDarkBackground: '#646464',
   subLightDarkBackground: '#dddddd',
   darkShadow: '#000000cc',
-  whiteShadow: '#ffffffcc',
+  whiteShadow: '#ffffffe6',
   zIndex: {
     top: 2000,
   },
