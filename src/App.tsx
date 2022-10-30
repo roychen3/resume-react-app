@@ -8,27 +8,14 @@ import { theme } from './webTheme';
 import Header from './layout/Header';
 import Content from './layout/content';
 
-interface StyledSwitchLanguagesContainerProps {
-  readonly theme: {
-    zIndex: {
-      top: number;
-    };
-  };
-}
-const StyledSwitchLanguagesContainer = styled.div<StyledSwitchLanguagesContainerProps>`
+const StyledSwitchLanguagesContainer = styled.div`
   position: fixed;
   right: 1rem;
   bottom: 1rem;
   z-index: ${({ theme }) => theme.zIndex.top};
 `;
 
-interface StyledSwitchLanguagesButtonProps {
-  readonly theme: {
-    highlight: string;
-    darkShadow: string;
-  };
-}
-const StyledSwitchLanguagesButton = styled.button<StyledSwitchLanguagesButtonProps>`
+const StyledSwitchLanguagesButton = styled.button`
   color: ${({ theme }) => theme.highlight};
   border-radius: 6px;
   border: 0px;
@@ -44,10 +31,6 @@ const StyledSwitchLanguagesButton = styled.button<StyledSwitchLanguagesButtonPro
 `;
 
 interface StyledLanguagesListProps {
-  readonly theme: {
-    highlight: string;
-    darkShadow: string;
-  };
   readonly $isOpenList: boolean;
 }
 const StyledLanguagesList = styled.ul<StyledLanguagesListProps>`
@@ -65,13 +48,7 @@ const StyledLanguagesList = styled.ul<StyledLanguagesListProps>`
   width: 100%;
 `;
 
-interface StyledLanguagesItemButtonProps {
-  readonly theme: {
-    mainText: string;
-    highlight: string;
-  };
-}
-const StyledLanguagesItemButton = styled.button<StyledLanguagesItemButtonProps>`
+const StyledLanguagesItemButton = styled.button`
   padding: 0.5rem;
   border: 0px;
   background-color: inherit;
