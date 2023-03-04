@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/resume-react-app/static/js/main.14a0cbcd.js",
+    "static/js/787.aee43d82.chunk.js": "/resume-react-app/static/js/787.aee43d82.chunk.js",
+    "static/media/experienceArcoa.jpg": "/resume-react-app/static/media/experienceArcoa.a26459ea11d93beff3cc.jpg",
+    "static/media/experienceCover.jpg": "/resume-react-app/static/media/experienceCover.b592a5a715120ae56bbd.jpg",
+    "static/media/contact.jpg": "/resume-react-app/static/media/contact.a40cc4aacec131f84fa3.jpg",
+    "static/media/cover.jpg": "/resume-react-app/static/media/cover.97e0ddbd79a1d08d98d5.jpg",
+    "static/media/headShot.jpg": "/resume-react-app/static/media/headShot.cad7114100fb72e4bfc1.jpg",
+    "static/media/experienceBankpro.jpg": "/resume-react-app/static/media/experienceBankpro.c04bbdd7c7effb585592.jpg",
+    "static/media/experienceBibian.jpg": "/resume-react-app/static/media/experienceBibian.622ef486dfae8277e067.jpg",
+    "static/media/experienceBackground.jpg": "/resume-react-app/static/media/experienceBackground.6118ec37f44c5f1a2504.jpg",
+    "index.html": "/resume-react-app/index.html",
+    "main.14a0cbcd.js.map": "/resume-react-app/static/js/main.14a0cbcd.js.map",
+    "787.aee43d82.chunk.js.map": "/resume-react-app/static/js/787.aee43d82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.14a0cbcd.js"
+  ]
+}
