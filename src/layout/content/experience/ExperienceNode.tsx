@@ -74,7 +74,9 @@ const ExperienceNode: React.FC<ExperienceNodeProps> = ({ data }) => {
       <StyledExperienceNodePeriod>{data.period}</StyledExperienceNodePeriod>
       <StyledExperienceNodeContent>
         <StyledExperienceNodeContentCompanyName>
-          <a href={data.companyUrl} target="_blank">{data.companyName}</a>
+          <a href={data.companyUrl} target="_blank" rel="noreferrer">
+            {data.companyName}
+          </a>
         </StyledExperienceNodeContentCompanyName>
         <StyledExperienceNodeContentJobTitle>
           {data.jobTitle}
