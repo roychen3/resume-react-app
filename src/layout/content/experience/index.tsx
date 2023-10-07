@@ -1,9 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
 import { useIntl } from 'react-intl';
 
 import imgExperienceBackground from '../../../assets/img/experienceBackground.jpg';
-import experienceBibian from '../../../assets/img/experienceBibian.jpg';
+import imgExperiencePentiumNetwork from '../../../assets/img/experiencePentiumNetwork.jpg';
+import imgExperienceBibian from '../../../assets/img/experienceBibian.jpg';
 import imgExperienceBankpro from '../../../assets/img/experienceBankpro.jpg';
 import imgExperienceArcoa from '../../../assets/img/experienceArcoa.jpg';
 
@@ -34,13 +34,22 @@ const Experience = () => {
 
   const experienceData = [
     {
-      backgroundImg: experienceBibian,
+      backgroundImg: imgExperiencePentiumNetwork,
+      companyName: intl.formatMessage({ id: 'experience.pentium-network.companyName' }),
+      companyUrl: 'https://www.pentiumnetwork.com/',
+      jobTitle: intl.formatMessage({ id: 'experience.pentium-network.jobTitle' }),
+      period: intl.formatMessage({ id: 'experience.pentium-network.period' }),
+      instruction: intl.formatMessage({ id: 'experience.pentium-network.instruction' }),
+      useSkill: 'Micro frontends, Module Federation, webpack5, TypeScript, React, Vue, MobX, rollup, vite, Git, HTML, CSS',
+    },
+    {
+      backgroundImg: imgExperienceBibian,
       companyName: intl.formatMessage({ id: 'experience.bibian.companyName' }),
       companyUrl: 'https://www.bibian.co.jp/',
       jobTitle: intl.formatMessage({ id: 'experience.bibian.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bibian.period' }),
       instruction: intl.formatMessage({ id: 'experience.bibian.instruction' }),
-      useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Next.js, webpack, Git',
+      useSkill: 'Next.js, React, Redux, Tailwind, Jest, webpack, Git, HTML, CSS',
     },
     {
       backgroundImg: imgExperienceBankpro,
@@ -49,7 +58,7 @@ const Experience = () => {
       jobTitle: intl.formatMessage({ id: 'experience.bankpro.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bankpro.period' }),
       instruction: intl.formatMessage({ id: 'experience.bankpro.instruction' }),
-      useSkill: 'HTML, CSS, React-Hook, Redux, Redux-Saga, Git',
+      useSkill: 'React, Redux, Redux-Saga, BootStrap, i18n, Jest, Git, HTML, CSS',
     },
     {
       backgroundImg: imgExperienceArcoa,
