@@ -1,9 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
 import { useIntl } from 'react-intl';
 
 import imgExperienceBackground from '../../../assets/img/experienceBackground.jpg';
-import experienceBibian from '../../../assets/img/experienceBibian.jpg';
+import imgExperiencePentiumNetwork from '../../../assets/img/experiencePentiumNetwork.jpg';
+import imgExperienceBibian from '../../../assets/img/experienceBibian.jpg';
 import imgExperienceBankpro from '../../../assets/img/experienceBankpro.jpg';
 import imgExperienceArcoa from '../../../assets/img/experienceArcoa.jpg';
 
@@ -34,7 +34,7 @@ const Experience = () => {
 
   const experienceData = [
     {
-      backgroundImg: experienceBibian,
+      backgroundImg: imgExperiencePentiumNetwork,
       companyName: intl.formatMessage({ id: 'experience.pentium-network.companyName' }),
       companyUrl: 'https://www.pentiumnetwork.com/',
       jobTitle: intl.formatMessage({ id: 'experience.pentium-network.jobTitle' }),
@@ -43,7 +43,7 @@ const Experience = () => {
       useSkill: 'Micro frontends, Module Federation, webpack5, TypeScript, React, Vue, MobX, rollup, vite, Git, HTML, CSS',
     },
     {
-      backgroundImg: experienceBibian,
+      backgroundImg: imgExperienceBibian,
       companyName: intl.formatMessage({ id: 'experience.bibian.companyName' }),
       companyUrl: 'https://www.bibian.co.jp/',
       jobTitle: intl.formatMessage({ id: 'experience.bibian.jobTitle' }),
