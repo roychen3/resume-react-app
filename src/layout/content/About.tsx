@@ -91,8 +91,6 @@ padding: 3rem 2rem;
 const Introduction = () => (
     <StyledIntroductionContainer>
         <FormattedMessage id="about.introduction.section1" />
-        <br /><br /><br /><br />
-        <FormattedMessage id="about.introduction.section2" />
     </StyledIntroductionContainer>
 )
 
@@ -153,11 +151,11 @@ const Skills = () => (
                 </h3>
                 <StyledSkillListDivider />
                 <StyledSkillList>
-                    <StyledSkillItem>React</StyledSkillItem>
-                    <StyledSkillItem>JavaScript</StyledSkillItem>
+                    <StyledSkillItem>ReactJS</StyledSkillItem>
+                    <StyledSkillItem>TypeScript</StyledSkillItem>
                     <StyledSkillItem>CSS</StyledSkillItem>
                     <StyledSkillItem>HTML</StyledSkillItem>
-                    <StyledSkillItem>webpack</StyledSkillItem>
+                    <StyledSkillItem>Webpack</StyledSkillItem>
                 </StyledSkillList>
             </StyledSkillListContainer>
 
