@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/resume-react-app/static/js/main.99f374af.js",
+    "main.js": "/resume-react-app/static/js/main.dcede1c5.js",
     "static/js/787.aee43d82.chunk.js": "/resume-react-app/static/js/787.aee43d82.chunk.js",
     "static/media/experienceArcoa.jpg": "/resume-react-app/static/media/experienceArcoa.a26459ea11d93beff3cc.jpg",
     "static/media/experiencePentiumNetwork.jpg": "/resume-react-app/static/media/experiencePentiumNetwork.b58454fe97924737e42d.jpg",
@@ -12,10 +12,10 @@
     "static/media/experienceBibian.jpg": "/resume-react-app/static/media/experienceBibian.622ef486dfae8277e067.jpg",
     "static/media/experienceBackground.jpg": "/resume-react-app/static/media/experienceBackground.6118ec37f44c5f1a2504.jpg",
     "index.html": "/resume-react-app/index.html",
-    "main.99f374af.js.map": "/resume-react-app/static/js/main.99f374af.js.map",
+    "main.dcede1c5.js.map": "/resume-react-app/static/js/main.dcede1c5.js.map",
     "787.aee43d82.chunk.js.map": "/resume-react-app/static/js/787.aee43d82.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.99f374af.js"
+    "static/js/main.dcede1c5.js"
   ]
 }
