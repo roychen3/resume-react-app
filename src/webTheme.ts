@@ -1,11 +1,11 @@
 export interface themeTypes {
   mainText: string;
   subDarkText: string;
-  subLighDarkText: string;
+  subLightText: string;
   highlight: string;
   darkBackground: string;
   subDarkBackground: string;
-  subLightDarkBackground: string;
+  subLightBackground: string;
   darkShadow: string;
   whiteShadow: string;
   zIndex: {
@@ -15,11 +15,11 @@ export interface themeTypes {
 export const theme: themeTypes = {
   mainText: 'black',
   subDarkText: '#646464',
-  subLighDarkText: '#dddddd',
+  subLightText: '#dddddd',
   highlight: 'white',
   darkBackground: '#3b3b3b',
   subDarkBackground: '#646464',
-  subLightDarkBackground: '#dddddd',
+  subLightBackground: '#dddddd',
   darkShadow: '#000000cc',
   whiteShadow: '#ffffffe6',
   zIndex: {

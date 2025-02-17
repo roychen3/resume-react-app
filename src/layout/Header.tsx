@@ -39,21 +39,19 @@ const StyledMenuItem = styled.li`
   padding: 1rem 1rem 1rem 0;
   display: block;
   text-align: right;
-  color: ${({ theme }) => theme.subLighDarkText};
+  color: ${({ theme }) => theme.subLightText};
   font-size: 1.125rem;
 
   :hover {
     color: ${({ theme }) => theme.highlight};
-    font-weight: 900;
   }
 
   a {
-    color: ${({ theme }) => theme.subLighDarkText};
+    color: ${({ theme }) => theme.subLightText};
     font-size: 1.125rem;
   }
   a:hover {
     color: ${({ theme }) => theme.highlight};
-    font-weight: 900;
   }
 `;
 
