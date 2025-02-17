@@ -12,7 +12,7 @@ const StyledExperienceCoverContainer = styled.div`
   background-position: center;
 `;
 const StyledExperienceTitle = styled.h1`
-  color: ${({ theme }) => theme.subLighDarkText};
+  color: ${({ theme }) => theme.subLightText};
   background-color: ${({ theme }) => theme.darkShadow};
   text-align: center;
   padding: 3rem;

@@ -98,7 +98,7 @@ const Introduction = () => (
 const StyledSkillsContainer = styled.div`
 width: 100%;
 padding: 3rem 2rem;
-background-color: ${({ theme }) => theme.subLightDarkBackground};
+background-color: ${({ theme }) => theme.subLightBackground};
 
 @media (min-width: 576px) {
     width: 100%;

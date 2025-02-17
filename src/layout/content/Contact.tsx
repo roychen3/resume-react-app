@@ -12,7 +12,7 @@ const StyledContactWay = styled.a<StyledContactWayProps>`
   text-align: center;
   margin: 1rem 0;
   display: block;
-  color: ${({ theme }) => theme.subLighDarkText};
+  color: ${({ theme }) => theme.subLightText};
 
   :hover {
     cursor: ${({ $isNotLink }) => ($isNotLink ? 'default' : 'pointer')};
@@ -57,7 +57,7 @@ const StyledContactWayShadow = styled.div`
   padding: 3rem 0;
 `;
 const StyledContactTitle = styled.h1`
-  color: ${({ theme }) => theme.subLighDarkText};
+  color: ${({ theme }) => theme.subLightText};
   text-align: center;
 `;
 const StyledContactWayContainer = styled.div`
