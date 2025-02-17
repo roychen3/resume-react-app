@@ -39,7 +39,49 @@ const Experience = () => {
       companyUrl: 'https://www.pentiumnetwork.com/',
       jobTitle: intl.formatMessage({ id: 'experience.pentium-network.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.pentium-network.period' }),
-      instruction: intl.formatMessage({ id: 'experience.pentium-network.instruction' }),
+      instruction: intl.formatMessage(
+        { 
+          id: 'experience.pentium-network.instruction'
+        },
+        {
+          'rapd-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.pentiumnetwork.com/rapd" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
+          'mrvn-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.pentiumnetwork.com/mrvn" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
+          'mavis-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.pentiumnetwork.com/mavis" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >   
+              {chunks}
+            </a>
+          ),
+          'gateone-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://github.com/liftoff/GateOne" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            > 
+              {chunks}
+            </a>
+          ),
+        }
+      ),
       useSkill: 'Micro frontends, Module Federation, webpack5, TypeScript, React, Vue, MobX, rollup, vite, Git, HTML, CSS',
     },
     {
@@ -48,7 +90,40 @@ const Experience = () => {
       companyUrl: 'https://www.bibian.co.jp/',
       jobTitle: intl.formatMessage({ id: 'experience.bibian.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bibian.period' }),
-      instruction: intl.formatMessage({ id: 'experience.bibian.instruction' }),
+      instruction: intl.formatMessage(
+        { 
+          id: 'experience.bibian.instruction'
+        },
+        {
+          'drug-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://drug.bibian.co.jp/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
+          'bbcheckout-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.bibian.co.jp/bbcheckout/description/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
+          'bbcstore-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.bibian.co.jp/bbcstore/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
+        }
+      ),
       useSkill: 'Next.js, React, Redux, Tailwind, Jest, webpack, Git, HTML, CSS',
     },
     {
@@ -57,7 +132,22 @@ const Experience = () => {
       companyUrl: 'https://www.bankpro.com.tw/',
       jobTitle: intl.formatMessage({ id: 'experience.bankpro.jobTitle' }),
       period: intl.formatMessage({ id: 'experience.bankpro.period' }),
-      instruction: intl.formatMessage({ id: 'experience.bankpro.instruction' }),
+      instruction: intl.formatMessage(
+        { 
+          id: 'experience.bankpro.instruction'
+        },
+        {
+          'sunnybank-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://b2bank.sunnybank.com.tw/eb/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
+        }
+      ),
       useSkill: 'React, Redux, Redux-Saga, BootStrap, i18n, Jest, Git, HTML, CSS',
     },
     {
