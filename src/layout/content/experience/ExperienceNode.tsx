@@ -62,7 +62,7 @@ interface ExperienceNodeProps {
     companyUrl: string;
     jobTitle: string;
     period: string;
-    instruction: string;
+    instruction: React.ReactNode;
     useSkill: string;
   };
 }
@@ -82,7 +82,7 @@ const ExperienceNode: React.FC<ExperienceNodeProps> = ({ data }) => {
           {data.jobTitle}
         </StyledExperienceNodeContentJobTitle>
         <StyledExperienceNodeContentInstruction>
-          {data.instruction?.split('<br />').join('\n')}
+          {data.instruction}
         </StyledExperienceNodeContentInstruction>
         <StyledExperienceNodeContentDivider />
         <StyledExperienceNodeSkills>
