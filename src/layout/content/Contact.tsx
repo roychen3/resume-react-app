@@ -1,6 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
+import { IoMdMail } from 'react-icons/io';
+import { FaPhoneSquare, FaGithub } from 'react-icons/fa';
 
 import imgContact from '../../assets/img/contact.jpg';
 
@@ -8,43 +9,49 @@ interface StyledContactWayProps {
   $isNotLink?: boolean;
 }
 const StyledContactWay = styled.a<StyledContactWayProps>`
-  width: 100%;
-  text-align: center;
-  margin: 1rem 0;
-  display: block;
   color: ${({ theme }) => theme.subLightText};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
   :hover {
     cursor: ${({ $isNotLink }) => ($isNotLink ? 'default' : 'pointer')};
-  }
-
-  @media (min-width: 992px) {
-    width: 33.33%;
   }
 `;
 
 interface ContactWayProps {
   data: {
-    icon: JSX.Element;
-    infomation: string;
+    icon: React.ReactNode;
+    information: string;
     href: string;
   };
 }
-const ContactWay: React.FC<ContactWayProps> = ({ data }) => (
-  <>
-    {data.href ? (
-      <StyledContactWay href={data.href} target="_blank">
-        {data.icon}
-        {data.infomation}
-      </StyledContactWay>
-    ) : (
-      <StyledContactWay $isNotLink>
-        {data.icon}
-        {data.infomation}
-      </StyledContactWay>
-    )}
-  </>
-);
+const ContactWay: React.FC<ContactWayProps> = ({ data }) => {
+  const content = (
+    <div>
+      {data.icon}
+      <span>{data.information}</span>
+    </div>
+  );
+  return (
+    <>
+      {data.href ? (
+        <StyledContactWay href={data.href} target="_blank">
+          {content}
+        </StyledContactWay>
+      ) : (
+        <StyledContactWay $isNotLink>{content}</StyledContactWay>
+      )}
+    </>
+  );
+};
 
 const StyledContactContainer = styled.div`
   background-image: url(${imgContact});
@@ -62,28 +69,46 @@ const StyledContactTitle = styled.h1`
 `;
 const StyledContactWayContainer = styled.div`
   padding-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 `;
-const StyledContactWayIcon = styled.i`
+const StyledContactIcon = styled.span`
   display: block;
+  height: 2.875rem;
   font-size: 2.875rem;
 `;
 const Contact = () => {
-  const contactWays = [
+  const contactWays: ContactWayProps['data'][] = [
     {
-      icon: <StyledContactWayIcon className="fas fa-envelope" />,
-      infomation: 'roy850323@gmail.com',
-      href: '',
+      icon: (
+        <StyledContactIcon>
+          <IoMdMail />
+        </StyledContactIcon>
+      ),
+      information: 'roy850323@gmail.com',
+      href: 'mailto:roy850323@gmail.com',
     },
     {
-      icon: <StyledContactWayIcon className="fas fa-phone-square" />,
-      infomation: '0987726674',
-      href: '',
+      icon: (
+        <StyledContactIcon>
+          <FaPhoneSquare />
+        </StyledContactIcon>
+      ),
+      information: '0987726674',
+      href: 'tel:0987726674',
     },
     {
-      icon: <StyledContactWayIcon className="fab fa-github" />,
-      infomation: 'roychen3',
+      icon: (
+        <StyledContactIcon>
+          <FaGithub />
+        </StyledContactIcon>
+      ),
+      information: 'roychen3',
       href: 'https://github.com/roychen3',
     },
   ];
@@ -102,6 +127,5 @@ const Contact = () => {
     </StyledContactContainer>
   );
 };
-Contact.propTypes = {};
 
 export default Contact;

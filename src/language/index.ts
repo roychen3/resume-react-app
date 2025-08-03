@@ -1,10 +1,10 @@
-import flatten from 'flat';
+import { flatten } from 'flat';
 
 import en_US from './locale/en_US.json';
 import zh_TW from './locale/zh_TW.json';
 
 interface appLanguagesTypes {
-  [ket: string]: any;
+  [key: string]: any;
 }
 const appLanguages: appLanguagesTypes = {
   'en-US': flatten(en_US),

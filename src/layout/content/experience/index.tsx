@@ -44,6 +44,15 @@ const Experience = () => {
           id: 'experience.pentium-network.instruction'
         },
         {
+          'pentium-agent-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.pentiumnetwork.com/pentium-agent" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
           'rapd-link': (chunks: React.ReactNode) => (
             <a 
               href="https://www.pentiumnetwork.com/rapd" 
@@ -82,7 +91,7 @@ const Experience = () => {
           ),
         }
       ),
-      useSkill: 'Micro frontends, Module Federation, webpack5, TypeScript, React, Vue, MobX, rollup, vite, Git, HTML, CSS',
+      useSkill: 'Electron, tRPC, Micro frontends, Module Federation, Webpack5, Rsbuild, TypeScript, React, Vue, MobX, Rollup, Vite, SQLite, Git',
     },
     {
       backgroundImg: imgExperienceBibian,
@@ -95,15 +104,6 @@ const Experience = () => {
           id: 'experience.bibian.instruction'
         },
         {
-          'drug-link': (chunks: React.ReactNode) => (
-            <a 
-              href="https://drug.bibian.co.jp/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              {chunks}
-            </a>
-          ),
           'bbcheckout-link': (chunks: React.ReactNode) => (
             <a 
               href="https://www.bibian.co.jp/bbcheckout/description/" 
@@ -174,6 +174,5 @@ const Experience = () => {
     </>
   );
 };
-Experience.propTypes = {};
 
 export default Experience;
