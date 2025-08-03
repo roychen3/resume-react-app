@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
@@ -110,6 +109,5 @@ const Header = () => {
     </header>
   );
 };
-Header.propTypes = {};
 
 export default Header;

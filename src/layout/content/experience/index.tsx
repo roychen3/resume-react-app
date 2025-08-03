@@ -174,6 +174,5 @@ const Experience = () => {
     </>
   );
 };
-Experience.propTypes = {};
 
 export default Experience;
