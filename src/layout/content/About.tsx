@@ -134,7 +134,7 @@ const StyledSkillList = styled.ul`
 padding-left: 1rem;
 `
 const StyledSkillItem = styled.li`
-padding: 0.5rem 0;
+padding: 0.125rem 0;
 `
 const Skills = () => (
     <StyledSkillsContainer id="skill">
@@ -163,6 +163,8 @@ const Skills = () => (
                 </h3>
                 <StyledSkillListDivider />
                 <StyledSkillList>
+                    <StyledSkillItem>NodeJS</StyledSkillItem>
+                    <StyledSkillItem>TypeScript</StyledSkillItem>
                     <StyledSkillItem>C#</StyledSkillItem>
                     <StyledSkillItem>SQL</StyledSkillItem>
                 </StyledSkillList>
