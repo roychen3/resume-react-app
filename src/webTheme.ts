@@ -3,6 +3,7 @@ export interface themeTypes {
   subDarkText: string;
   subLightText: string;
   highlight: string;
+  link: string;
   darkBackground: string;
   subDarkBackground: string;
   subLightBackground: string;
@@ -17,6 +18,7 @@ export const theme: themeTypes = {
   subDarkText: '#646464',
   subLightText: '#dddddd',
   highlight: 'white',
+  link: '#007FFF',
   darkBackground: '#3b3b3b',
   subDarkBackground: '#646464',
   subLightBackground: '#dddddd',

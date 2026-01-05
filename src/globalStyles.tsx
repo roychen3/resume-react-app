@@ -22,10 +22,10 @@ body {
 
 a {
   text-decoration: none;
-  color: ${({ theme }) => theme.mainText};
+  color: ${({ theme }) => theme.link};
 
   &:hover {
-    color: ${({ theme }) => theme.highlight};
+    opacity: 0.7;
     cursor: pointer;
   }
 }

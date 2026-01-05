@@ -34,7 +34,11 @@ const StyledExperienceNodeContent = styled.div`
     transform: translateX(13rem);
   }
 `;
-const StyledExperienceNodeContentCompanyName = styled.h2``;
+const StyledExperienceNodeContentCompanyName = styled.h2`
+  & > a {
+    color: ${({ theme }) => theme.mainText};
+  }
+`;
 const StyledExperienceNodeContentJobTitle = styled.h4`
   padding-bottom: 1rem;
   color: ${({ theme }) => theme.subDarkText};
