@@ -44,6 +44,16 @@ const Experience = () => {
           id: 'experience.pentium-network.instruction'
         },
         {
+          
+          'tradie-agent-link': (chunks: React.ReactNode) => (
+            <a 
+              href="https://www.tradieagent.com.au" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {chunks}
+            </a>
+          ),
           'pentium-agent-link': (chunks: React.ReactNode) => (
             <a 
               href="https://www.pentiumnetwork.com/pentium-agent" 
