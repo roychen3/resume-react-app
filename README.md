@@ -1,4 +1,4 @@
-### DEMO
+### Website
 https://roychen3.github.io/resume-react-app/
 
 <br />
